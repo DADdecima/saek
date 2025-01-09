@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΕΠΙΚΟΙΝΩΝΙΑ - PsitakosGR</title>
+    <link rel="stylesheet" href="epikinonia.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/">
+            <img src="images/crop.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="psitakosgr.html">ΨΗΤΑΚΟΣGR</a></li>
+                <li><a href="sxetikame_emas.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
+                <li><a href="syntages.html">ΣΥΝΤΑΓΕΣ</a></li>
+                <li><a href="epikinonia.html" class="active">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="epikinonia">
+            <h1>ΕΠΙΚΟΙΝΩΝΙΑ</h1>
+            <p>Εάν έχετε οποιεσδήποτε ερωτήσεις ή σχόλια, μη διστάσετε να επικοινωνήσετε μαζί μας. Συμπληρώστε την παρακάτω φόρμα και θα σας απαντήσουμε το συντομότερο δυνατό.</p>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">ΟΝΟΜΑ:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">ΜΗΝΥΜΑ:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">ΑΠΟΣΤΟΛΗ</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ΨΗΤΑΚΟΣGR. All rights reserved.</p>
+    </footer>
+</body>
